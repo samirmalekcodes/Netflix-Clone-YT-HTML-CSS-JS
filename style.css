@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #999;
+}
+
+.showcase {
+  height: 100%;
+  position: relative;
+  height: 93vh;
+  background: rgba(0, 0, 0, 0.557);
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: url("https://i.ibb.co/vXqDmnh/background.jpg") no-repeat center
+    center/cover;
+  opacity: 0.95;
+}
+
+.showcase-top {
+  z-index: 2;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  margin: 0;
+}
+
+.showcase-top img {
+  width: 170px;
+}
+
+.showcase-top a {
+  display: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.btn-rounded {
+  border-radius: 5px;
+}
+
+/* Buttons */
+.btn {
+  background: red;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+h1 {
+  color: white;
+  max-width: 640px;
+  margin: 0 auto;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+p {
+  margin: 0.5rem 0;
+  font-size: 1.625rem;
+  max-width: 640px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.817);
+  line-height: 1.25;
+}
+
+.showcase-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+#field-email {
+  padding: 10px;
+  max-width: 450px;
+  margin: 10px;
+  font-weight: 400;
+  border-style: none;
+  text-align: center;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 950px;
+  padding-top: 0.85rem;
+  text-decoration: none;
+}
+
+.cta-button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.25rem;
+  padding: 0 1em;
+  width: auto;
+  text-decoration: none;
+}
+
+.fa-chevron-right {
+  margin-left: 5px;
+}
