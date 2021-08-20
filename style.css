@@ -7,6 +7,7 @@
 body {
   background-color: black;
   color: #999;
+  font-family: "Arial", sans-serif;
 }
 
 .showcase {
@@ -47,13 +48,11 @@ body {
   transform: translate(-50%, -50%);
   text-decoration: none;
 }
-.btn-rounded {
-  border-radius: 5px;
-}
 
 /* Buttons */
 .btn {
-  background: red;
+  display: inline-block;
+  background: #e50914;
   color: #fff;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
@@ -66,6 +65,31 @@ body {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
   border-radius: 2px;
 }
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.btn-xl {
+  font-size: 1.2rem;
+  padding: 1.5rem 2.1rem;
+  text-transform: uppercase;
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding: 22px 3px;
+  text-transform: uppercase;
+}
+
+.btn-icon {
+  margin-left: 1rem;
+}
+
 h1 {
   color: white;
   max-width: 640px;
@@ -78,7 +102,6 @@ p {
   margin: 0.5rem 0;
   font-size: 1.625rem;
   max-width: 640px;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.817);
   line-height: 1.25;
 }
@@ -95,38 +118,74 @@ p {
   flex-direction: column;
   top: 50%;
   transform: translateY(-50%);
-  text-transform: uppercase;
 }
 
-#field-email {
-  padding: 10px;
-  max-width: 450px;
-  margin: 10px;
-  font-weight: 400;
-  border-style: none;
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Tabs */
+.tabs {
+  background: #141414;
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+}
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
+.tabs p {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
 
-.email-form {
-  display: flex;
+.tabs .container > div {
+  padding: 1.5rem 0;
+}
+
+.tab-border {
+  border-bottom: #e50914 4px solid;
+}
+
+/* Tab Content */
+.tab-content {
+  padding: 3rem 0;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+  opacity: 0;
+}
+
+.show {
+  display: block !important;
+  opacity: 1 !important;
+  transition: all 1000 ease-in;
+}
+
+#tab-1-content .tab-1-content-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 950px;
-  padding-top: 0.85rem;
-  text-decoration: none;
-}
-
-.cta-button {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0.25rem;
-  padding: 0 1em;
-  width: auto;
-  text-decoration: none;
-}
-
-.fa-chevron-right {
-  margin-left: 5px;
 }
